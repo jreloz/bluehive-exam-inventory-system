@@ -29,17 +29,8 @@ Route::post('/register', 'API\AuthController@register');
 //Login User
 Route::post('/login', 'API\AuthController@login');
 
-//Get User
-// Route::middleware('auth:api')->get('/me',function(){
-//     return auth('api')->user();
-// });
-
-
+//Transactions
 Route::middleware('auth:api')->get('/inventory', 'API\InventoryController@index');
-
-Route::middleware('auth:api')->get('/inventory', 'API\InventoryController@index');
-
-Route::middleware('auth:api')->get('/inventory/create', 'API\InventoryController@create');
 
 Route::middleware('auth:api')->post('/inventory/store', 'API\InventoryController@store');
 
