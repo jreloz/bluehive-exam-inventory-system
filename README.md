@@ -8,6 +8,7 @@
 </p>
 
 ## Bluehive Exam:
+**Note: 100% working on local machine (Apache,MYSQL, Laravel 7.30.4)
 
 - Code cleanliness
 - Migration
